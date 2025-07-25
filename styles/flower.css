@@ -123,6 +123,68 @@ section{
   
 }
 
+.deal-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.deal-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.deal-card.small {
+  height: 150px;
+}
+
+.deal-card.large {
+  height: 100%;
+}
+
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+.overlay a {
+  display: block;
+  margin-top: 10px;
+  text-decoration: none;
+  background-color: white;
+  color: black;
+  padding: 6px 12px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 4px;
+  text-shadow: none;
+}
+
+.deal-images {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 40px;
+  border-radius: 12px;
+ 
+}
+
+.deal-images-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+
  .join-section {
     background-image: url('../assets/news-letter-bg.png');
     background-size: cover;
@@ -176,7 +238,8 @@ section{
     margin: 0 auto;
     margin-top: 50px;
 }
-/* @media(max-width: 768px) {
+
+@media(max-width: 768px) {
   .plants-lover-section {
     flex-direction: column;
     text-align: center;
@@ -195,7 +258,7 @@ section{
   .description-list {
     max-width: 100%;
   }
-} */
+}
 
 
 
