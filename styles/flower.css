@@ -240,6 +240,11 @@ section{
     margin: 0 auto;
     margin-top: 50px;
 }
+.content.img {
+  display: flex;
+  gap: 20px; 
+  align-items: center; 
+}
 
 @media (max-width: 576px) {
   
@@ -327,10 +332,19 @@ section{
   padding: 0 20px;
 }
 
-.subscribe-form {
-    margin: 0 auto;
-    padding: 0 20px;
+  .subscribe-form {
+    padding: 0 20px; 
   }
+
+  .subscribe-form input {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .subscribe-form button {
+    flex-shrink: 0;
+  }
+  
 
   .footer-section {
     flex-direction: column;
