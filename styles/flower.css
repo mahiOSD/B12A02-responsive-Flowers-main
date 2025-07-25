@@ -2,7 +2,7 @@ body{
       font-family: "Noto Serif", serif;
 }
 nav{
-    max-width:1240px;
+    max-width:1440px;
     margin: 0 auto;
     
 }
@@ -62,7 +62,7 @@ nav li a{
 }
 .banner{
     
-    max-width: 1240px;
+    max-width: 1440px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -71,7 +71,7 @@ nav li a{
     margin-top: 100px;
 }
 section{
-    max-width: 1240px;
+    max-width: 1440px;
     margin: 0 auto;
 }
 .card{
@@ -122,6 +122,9 @@ section{
  margin-bottom: 20px; 
   
 }
+.deal-section{
+    margin-top: 120px;
+}
 
 .deal-card {
   position: relative;
@@ -159,14 +162,12 @@ section{
 .overlay a {
   display: block;
   margin-top: 10px;
-  text-decoration: none;
-  background-color: white;
-  color: black;
-  padding: 6px 12px;
+  text-decoration: underline;
+  color:white;
   font-size: 1.1rem;
   font-weight: bold;
-  border-radius: 4px;
-  text-shadow: none;
+  
+ 
 }
 
 .deal-images {
@@ -174,6 +175,7 @@ section{
   grid-template-columns: 1fr 2fr;
   gap: 40px;
   border-radius: 12px;
+ 
  
 }
 
@@ -234,32 +236,105 @@ section{
     display: flex;
     justify-content: space-between;
     margin-top: 50px;
-    max-width: 1240px;
+    max-width: 1440px;
     margin: 0 auto;
     margin-top: 50px;
 }
 
-@media(max-width: 768px) {
-  .plants-lover-section {
-    flex-direction: column;
-    text-align: center;
+@media (max-width: 576px) {
+  
+  .nav-section {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 15px;
   }
 
-  .main-image {
+  .nav-items {
+    display: flex;
+    gap: 10px;
+  }
+
+  .nav-item-1,
+  .nav-item-2,
+  .nav-item-3 {
+    display: none;
+  }
+
+  .nav-item-4 a {
+    font-size: 1rem;
+    color: black;
+    display: flex;
+    align-items: center;
+  }
+
+  nav img {
+    width: 100px;
+  }
+
+  
+  .banner {
+    flex-direction: column-reverse;
+    margin-top: 50px;
+    padding: 0 15px;
+  }
+ 
+  .banner img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+   .card {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+  
+  .card-item img {
+    width: 100%;
+    height: auto;
+  }
+
+    .plants-lover-section {
+    flex-direction: column;
+    gap: 40px;
+    padding: 0 15px;
+  }
+
+  .image-container .main-image {
     width: 100%;
   }
 
   .badge {
-    top: 10px;
-    right: 10px;
-    width: 80px;
+    display: none;
   }
 
-  .description-list {
-    max-width: 100%;
+  
+  .deal-images {
+    grid-template-columns: 1fr;
+    padding: 0 15px;
   }
+
+  .deal-images-column {
+    flex-direction: column;
+  }
+
+  
+.join-text {
+  font-size: 2rem;
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 0 20px;
 }
 
+.subscribe-form {
+    margin: 0 auto;
+    padding: 0 20px;
+  }
 
+  .footer-section {
+    flex-direction: column;
+    justify-content: space-between;
+  }
 
-
+}
